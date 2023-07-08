@@ -56,4 +56,29 @@ function showQuestion() {
       answerButtons[j].addEventListener("click", checkAnswer);
     }
   }
+  function checkAnswer() {
+    var selectedAnswer = this.value;
+  
+    var question = questions[currentQuestionIndex];
+  
+    if (selectedAnswer === question.answer) {
+      feedbackElement.textContent = "Correct!";
+    } else {
+      feedbackElement.textContent = "Wrong!";
+      time -= 10;
+      if (time < 0) {
+        time = 0;
+      }
+      timeElement.textContent = time;
+    }
+  
+    feedbackElement.classList.remove("hide");
+  
+    currentQuestionIndex++;
+    if (currentQuestionIndex === questions.length) {
+      endQuiz();
+    } else {
+      setTimeout(showQuestion, 1000);
+    }
+  }
   
