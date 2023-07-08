@@ -97,3 +97,20 @@ function showQuestion() {
     finalScoreElement.textContent = time;
   }
   
+  function saveScore(event) {
+    event.preventDefault();
+  
+    var initials = initialsElement.value.trim();
+  
+    if (initials === "") {
+      alert("Please enter your initials.");
+      return;
+    }
+  
+    var score = {
+      initials: initials,
+      score: time
+    };
+  
+    initialsElement.value = "";
+  }
