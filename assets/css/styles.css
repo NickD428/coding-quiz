@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(116, 116, 211)
+  }
+  
+  .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .timer {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .choices {
+    margin-top: 10px;
+  }
+  
+  .choice {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .scores {
+    text-align: right;
+    margin-bottom: 10px;
+  }
