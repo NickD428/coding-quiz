@@ -36,3 +36,24 @@ function updateTime() {
   }
 }
 
+function showQuestion() {
+    resetQuestion();
+  
+    var question = questions[currentQuestionIndex];
+  
+    questionTitleElement.textContent = question.title;
+  
+    for (var i = 0; i < question.choices.length; i++) {
+      var choice = document.createElement("button");
+      choice.textContent = question.choices[i];
+      choice.setAttribute("class", "choice");
+      choice.setAttribute("value", question.choices[i]);
+      answersElement.appendChild(choice);
+    }
+  
+    var answerButtons = document.getElementsByClassName("choice");
+    for (var j = 0; j < answerButtons.length; j++) {
+      answerButtons[j].addEventListener("click", checkAnswer);
+    }
+  }
+  
