@@ -15,7 +15,7 @@
   A simple quiz to help you study code
   
   ## Installation
-  visit the deployed page at: https://nickd428.github.io/coding-quiz/
+  download my repository
   
   ## Usage
   studying. feel free to add more questions!
@@ -28,7 +28,7 @@
   Create your own fork and submit a pull request
   
   ## Tests
-  visit the deployed page
+  visit the deployed page at: https://nickd428.github.io/coding-quiz/
   
   ## Questions
   Project created by NickD428, youtube and ChatGPT!
