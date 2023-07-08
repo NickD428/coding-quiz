@@ -35,3 +35,4 @@
   Check out my other works here! https://github.com/NickD428
   Questions? Contact me here: chargerfan428@aol.com
   
+![coding quiz](https://github.com/NickD428/coding-quiz/assets/126355678/c1d92b8b-bb2f-4ef9-83c9-3d4dae1a3ee9)
