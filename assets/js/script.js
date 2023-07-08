@@ -82,3 +82,18 @@ function showQuestion() {
     }
   }
   
+  function resetQuestion() {
+    questionTitleElement.textContent = "";
+    answersElement.innerHTML = "";
+    feedbackElement.classList.add("hide");
+  }
+  
+  function endQuiz() {
+    clearInterval(timerInterval);
+  
+    document.getElementById("questions").classList.add("hide");
+    endScreen.classList.remove("hide");
+  
+    finalScoreElement.textContent = time;
+  }
+  
