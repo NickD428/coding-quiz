@@ -15,7 +15,7 @@
   A simple quiz to help you study code
   
   ## Installation
-  visit the deployed page at:
+  visit the deployed page at: https://nickd428.github.io/coding-quiz/
   
   ## Usage
   studying. feel free to add more questions!
@@ -31,7 +31,7 @@
   visit the deployed page
   
   ## Questions
-  Project created by NickD428!
+  Project created by NickD428, youtube and ChatGPT!
   Check out my other works here! https://github.com/NickD428
   Questions? Contact me here: chargerfan428@aol.com
   
