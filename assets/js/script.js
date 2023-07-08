@@ -118,8 +118,8 @@ function showQuestion() {
       score: time
     };
     var savedScores = JSON.parse(localStorage.getItem("scores")) || [];
-savedScores.push(score);
-localStorage.setItem("scores", JSON.stringify(savedScores));
+    savedScores.push(score);
+    localStorage.setItem("scores", JSON.stringify(savedScores));
   
     initialsElement.value = "";
   }
