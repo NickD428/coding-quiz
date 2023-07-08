@@ -12,6 +12,10 @@ var currentQuestionIndex = 0;
 var time = 0;
 var timerInterval;
 
+var sfxRight = new Audio('assets/sfx/correct.wav');
+var sfxWrong = new Audio('assets/sfx/incorrect.wav');
+
+
 startButton.addEventListener("click", startQuiz);
 
 submitButton.addEventListener("click", saveScore);
@@ -62,8 +66,10 @@ function showQuestion() {
     var question = questions[currentQuestionIndex];
   
     if (selectedAnswer === question.answer) {
+      sfxRight.play();
       feedbackElement.textContent = "Correct!";
     } else {
+      sfxWrong.play();
       feedbackElement.textContent = "Wrong!";
       time -= 10;
       if (time < 0) {
